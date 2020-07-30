@@ -4,7 +4,7 @@ LOG_FILENAME = "twipy.log"
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
 logging.basicConfig(filename=LOG_FILENAME,level=logging.INFO)  
-url = "http://api.openweathermap.org/data/2.5/weather?zip=14469,US&appid=6f521a9d2ef90c3cab501db55d64c0ea"
+url = "http://api.openweathermap.org/data/2.5/weather?zip=[enter your zip here],US&appid=[enter your token id here]"
 
 response = requests.get(url)
 
